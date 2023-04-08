@@ -1,0 +1,420 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+     background: linear-gradient(to right, #757677, #373d4d, #264353);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #313131;
+    color: #FFF;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 10px;
+                font-size: 15px;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+/* Estilos das seções */
+section {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilos do botão de contato */
+.btn {
+    background-color: #0074D9;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0063AD;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #444;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* =CSS Reset */
+/* https://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+*, html, body {
+margin:0;
+padding:0;
+}
+/* mais regras CSS reset */
+
+/* regra para o box-sizing */
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* regra para o clear float */
+.cf:before,
+.cf:after {content: " ";display: table;}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+body {
+margin-left:55px; /* espaço à esquerda para a barra vertical vísivel do menu */
+font:  62.5%/1.2 Verdana, Helvetica, Arial, sans-serif;
+}
+#lateral {
+padding:0 50px 0 0;
+-moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+font-size:1.2em;
+background:rgb(44,62,80);
+background-image: -moz-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+ background-image: -webkit-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+  background-image: -o-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79) );
+   background-image: -ms-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+    background-image: linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
+height:100%;
+overflow:hidden;
+width:370px; 
+position:fixed;
+top:0;
+left:-320px;
+}
+#lateral:before {
+z-index:1000;
+content: url(icone-menu.png);
+font-size:4em;
+color:white;
+position:fixed;
+left:4px;
+top:45px;
+}
+#lateral:hover:before, #lateral:focus:before {
+left:-500px
+}
+#lateral:hover, #lateral:focus,  #lateral:active  {
+overflow-y:scroll;
+-moz-transform: translate(320px, 0);
+    -webkit-transform: translate(320px, 0);
+        -o-transform: translate(320px, 0);
+            transform: translate(320px, 0);
+padding-right:0;
+}	
+#lateral .box {
+    list-style-type:none;
+    margin-bottom:1em;;
+    padding-bottom:1em;
+    }
+#lateral h3 {
+    display:inline-block;
+    font-weight:bold;
+    font-size:1.6em;
+    font-style:normal;
+    padding-bottom:0.2em;
+    margin: 2em 0 2em 0.81em;
+    color:rgb(255,255,255);
+    border-bottom: 4px solid rgb(155,155,155);
+    }
+#menu {
+    font-style:italic;
+    position:relative;
+    font-size:1.0em;
+    margin:1em 0 1em -1em;
+    padding:0;
+    }
+#menu li {padding:0; margin:0;}
+#menu li a,  #menu li a:link {
+    font-size:1.2em;
+    color:rgb(255,255,255);
+    text-decoration: none;
+    padding: 0.8em 0 0.8em 1em;
+    display: block;
+    -moz-transition: all 1.2s ease;
+            -webkit-transition: all 1.2s ease;
+                -o-transition: all 1.2s ease;
+                    transition: all 1.2s ease;
+    }
+#menu li a:hover {
+    color:rgb(255,255,255);
+    background-color:rgba(255,255,255,0.2);
+    -moz-transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+    }
+         
+    .btn-contato {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #2c3e50; /* cor azul meio escuro */
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+      
+      .btn-contato:hover {
+        background-color: #34495e; /* cor azul mais escura ao passar o mouse */
+      }
+      .page-transition {
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .social-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .social-button {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        background-color: #1c75bc;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    
+    .social-button img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .social-button:hover {
+        transform: scale(1.1);
+        box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        resize: none;
+      }
+      
+      label {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        resize: none;
+      }
+      
+      input[type="text"], textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .post {
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        font-size: 1rem;
+      }
+      
+      .post-date {
+        font-style: italic;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+      }
+      
+      textarea {
+
+        resize: none;
+        height: 200px;
+        width: 400px;
+      }
+
+
+      /* Centralizando o conteúdo na tela */
+.book-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.book {
+  background-color: #fff;
+  width: calc(33.33% - 20px);
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 30%;
+  margin-right: 2%;
+  vertical-align: top;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+  .book img {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .book h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .book p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    
+  }
+  
+  /* Estilo do botão Comprar */
+  .buy-button {
+    display: block;
+    background-color: #3c8336;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: #005f78;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  .book:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+
+  a {
+
+    font-style: oblique;
+    color: #000000;
+    
+  }
+  
+  /* Estilos para telas com largura menor ou igual a 768px */
+  @media (max-width: 767px) {
+    .book {
+    width: 100%;
+    margin-right: 0;
+    }
+    
+    .books {
+    justify-content: center;
+    }
+    }
+
+    main {
+      max-width: 900px; /* altere o valor para o desejado */
+      margin: 0 auto; /* centraliza a seção na página */
+      padding: 20px;
+      border: 2px solid rgb(173, 162, 162); /* adiciona uma borda preta de 2px */
+    }
+    main section {
+      border: 2px solid rgb(117, 110, 110); /* adiciona uma borda preta de 2px */
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+        

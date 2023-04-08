@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minha Página</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<header>
+		<h1>Minha Página</h1>
+		<nav>
+			<ul>
+				<li><a href="/index.html">Pagina inicial</a></li>
+				<li><a href="biografia.html">Sobre</a></li>
+				<li><a href="redes.html">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="lateral">
+        <div id="menu">
+                      
+        <h3 class="link-titulo">Meus Destaques</h3>
+	
+            <li><a href="/abas/TODOSlIVROS.HTML">livros</a></li>
+			<li><a href="#">historias</a></li>
+			
+
+     
+        <h3 class="link-titulo">Sobre mim</h3>
+          <ul class="box">
+            <li><a href="/abas/biografia.html" class="page-transition">Minha biografia</a></li>
+            
+			<a href="/abas/redes.html" class="btn-contato">Contato</a>
+            <!-- mais links -->
+          </ul>
+            
+        <!-- mais seções -->
+        
+        </div> <!-- /#menu -->
+        </div id="link"> <!-- vazio --> <div>
+        </div> <!-- /#lateral -->
+	
+	<main>
+		<section>
+            <h2>Poste seu texto</h2>
+            <form style="resize: none;">
+              <label for="post-content">Texto:</label>
+              <textarea id="post-content" name="post-content" placeholder="“Tempos difíceis criam homens fortes, homens fortes criam tempos fáceis.
+			  Tempos fáceis criam homens fracos, homens fracos criam tempos difíceis.”"></textarea>
+              <input type="submit" value="Postar">
+            </form>
+          </section>
+          
+          <section>
+            <h2>Últimos Posts</h2>
+            <div id="post-container"></div>
+          </section>
+          
+			<h2>Textos anteriores</h2>
+			<div id="textos-anteriores"></div>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 Augusto. Todos os direitos reservados.</p>
+	</footer>
+
+	<script>
+		const form = document.querySelector('form');
+const postContainer = document.querySelector('#post-container');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const postContent = document.querySelector('#post-content').value;
+  const currentDate = new Date().toLocaleDateString();
+
+  const postElement = document.createElement('div');
+  postElement.classList.add('post');
+
+  const dateElement = document.createElement('div');
+  dateElement.classList.add('post-date');
+  dateElement.textContent = currentDate;
+
+  const contentElement = document.createElement('div');
+  contentElement.textContent = postContent;
+
+  postElement.prepend(dateElement);
+  postElement.prepend(contentElement);
+
+  postContainer.prepend(postElement);
+
+  document.querySelector('#post-content').value = '';
+});
+
+	</script>
+</body>
+</html>
